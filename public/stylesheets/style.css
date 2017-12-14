@@ -1,0 +1,73 @@
+body {
+  background: #eeeeee;
+}
+#header {
+  text-align: center;
+  padding: 10px 0;
+  font-family: arial;
+  font-weight: bold;
+  color: #606060;
+  margin-bottom: 5px;
+}
+#map {
+  background-color: #cde;
+  border: 1px solid #ccc;
+}
+.background {
+  fill: none;
+  pointer-events: all;
+}
+#countries, #states {
+  fill: #f9c157;
+  stroke: #cde;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  cursor: pointer;
+}
+#countries .active, #states .active, #countries .overactive {
+  fill: #f28617;
+}
+#cities {
+  stroke-width: 0;
+}
+.city {
+  fill: #345;
+  stroke: #fff;
+}
+pre.prettyprint {
+  border: 1px solid #ccc;
+  margin-bottom: 0;
+  padding: 9.5px;
+}
+footer {
+  width: 100%;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 14px;
+  color: #606060;
+}
+div.pop {
+  position: absolute;
+  background: rgba(51,68,85,0.8);
+  padding: 20px;
+  top: 50%;
+  left: 5%;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: Helvetica;
+  max-width: 300px;
+}
+@media screen and (max-width: 600px) {
+  div.pop {
+    top: 20%;
+    max-width: 200px;
+  }
+}
